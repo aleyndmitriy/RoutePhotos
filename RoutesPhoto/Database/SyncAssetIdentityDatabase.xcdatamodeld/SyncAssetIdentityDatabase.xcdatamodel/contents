@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21513" systemVersion="21G419" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="AlbumIdentity" representedClassName="AlbumIdentity" syncable="YES">
+        <attribute name="localIdentifier" attributeType="String"/>
+        <attribute name="localizedTitle" attributeType="String"/>
+        <attribute name="order" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="remoteDriveId" optional="YES" attributeType="String"/>
+        <attribute name="remoteFolderIdentifier" optional="YES" attributeType="String"/>
+        <attribute name="remoteFolderName" optional="YES" attributeType="String"/>
+        <attribute name="type" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="messageIdentity" toMany="YES" deletionRule="Cascade" destinationEntity="MessageIdentity" inverseName="relalbum" inverseEntity="MessageIdentity"/>
+        <relationship name="photoIdentity" toMany="YES" deletionRule="Cascade" destinationEntity="PhotoIdentity" inverseName="album" inverseEntity="PhotoIdentity"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="localIdentifier"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="MessageIdentity" representedClassName="MessageIdentity" syncable="YES">
+        <attribute name="albumIdentifier" attributeType="String"/>
+        <attribute name="creationDate" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="locked" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="messageIdentifier" attributeType="String"/>
+        <attribute name="messageName" attributeType="String"/>
+        <attribute name="photoIdentifier" attributeType="String"/>
+        <attribute name="remoteIdentifier" optional="YES" attributeType="String"/>
+        <attribute name="remoteName" optional="YES" attributeType="String"/>
+        <attribute name="text" attributeType="Binary" allowsExternalBinaryDataStorage="YES"/>
+        <relationship name="relalbum" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="AlbumIdentity" inverseName="messageIdentity" inverseEntity="AlbumIdentity"/>
+    </entity>
+    <entity name="PhotoIdentity" representedClassName="PhotoIdentity" syncable="YES">
+        <attribute name="albumIdentifier" attributeType="String"/>
+        <attribute name="creationDate" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="image" attributeType="Binary" allowsExternalBinaryDataStorage="YES"/>
+        <attribute name="latitude" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="locationAddress" optional="YES" attributeType="String"/>
+        <attribute name="locked" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="longitude" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="photoIdentifier" attributeType="String"/>
+        <attribute name="photoName" attributeType="String"/>
+        <attribute name="remoteIdentifier" optional="YES" attributeType="String"/>
+        <attribute name="remoteName" optional="YES" attributeType="String"/>
+        <relationship name="album" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="AlbumIdentity" inverseName="photoIdentity" inverseEntity="AlbumIdentity"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="photoIdentifier"/>
+            </uniquenessConstraint>
+            <uniquenessConstraint/>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="SendMessageIdentity" representedClassName="SendMessageIdentity" parentEntity="MessageIdentity" syncable="YES">
+        <attribute name="remoteAlbumIdentifier" attributeType="String"/>
+        <attribute name="remoteDriveId" optional="YES" attributeType="String"/>
+        <attribute name="remoteType" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="sessionId" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+    </entity>
+    <entity name="SendPhotoIdentity" representedClassName="SendPhotoIdentity" syncable="YES">
+        <attribute name="albumIdentifier" attributeType="String"/>
+        <attribute name="creationDate" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="image" attributeType="Binary" allowsExternalBinaryDataStorage="YES"/>
+        <attribute name="latitude" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="longitude" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="photoIdentifier" attributeType="String"/>
+        <attribute name="photoName" attributeType="String"/>
+        <attribute name="remoteAlbumIdentifier" attributeType="String"/>
+        <attribute name="remoteDriveId" optional="YES" attributeType="String"/>
+        <attribute name="remoteIdentifier" optional="YES" attributeType="String"/>
+        <attribute name="remoteName" optional="YES" attributeType="String"/>
+        <attribute name="remoteType" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="sessionId" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+    </entity>
+</model>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="20086" systemVersion="21F79" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="YES" userDefinedModelVersionIdentifier="">
+    <entity name="PhotoItem" representedClassName="PhotoItem" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="image" optional="YES" attributeType="Binary"/>
+        <attribute name="latitude" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="longitude" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="temporaryURL" optional="YES" attributeType="URI"/>
+        <attribute name="timestamp" attributeType="Date" defaultDateTimeInterval="677318460" usesScalarValueType="NO"/>
+    </entity>
+    <elements>
+        <element name="PhotoItem" positionX="-63" positionY="-18" width="128" height="119"/>
+    </elements>
+</model>

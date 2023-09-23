@@ -1,0 +1,1365 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FA08961328D9A99300A35551 /* FileError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA08961228D9A99300A35551 /* FileError.swift */; };
+		FA30614D296B1D4800624A7E /* NavigationStateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA30614C296B1D4800624A7E /* NavigationStateManager.swift */; };
+		FA326AE328EB0B5900F2A67F /* ButtonFolderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA326AE228EB0B5900F2A67F /* ButtonFolderView.swift */; };
+		FA34AD7A290FA698001EE095 /* PermissionsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA34AD79290FA698001EE095 /* PermissionsModel.swift */; };
+		FA3DAD1A28B26458008BF9BC /* AssetsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3DAD1928B26458008BF9BC /* AssetsList.swift */; };
+		FA3DAD1C28B26C8B008BF9BC /* AssetRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3DAD1B28B26C8B008BF9BC /* AssetRow.swift */; };
+		FA3E23D528ED93D000FF4490 /* CreateFolderModalWithPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3E23D428ED93D000FF4490 /* CreateFolderModalWithPickerView.swift */; };
+		FA3EEF1628D8685C00776B81 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA3EEF1528D8685C00776B81 /* GoogleService-Info.plist */; };
+		FA3EEF1928D86AA500776B81 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = FA3EEF1828D86AA500776B81 /* FirebaseAnalytics */; };
+		FA3EEF1B28D86AA500776B81 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FA3EEF1A28D86AA500776B81 /* FirebaseAnalyticsSwift */; };
+		FA3EEF1D28D86AA500776B81 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = FA3EEF1C28D86AA500776B81 /* FirebaseCrashlytics */; };
+		FA3EEF1F28D86AA500776B81 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = FA3EEF1E28D86AA500776B81 /* FirebaseDatabase */; };
+		FA3EEF2128D86AA500776B81 /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FA3EEF2028D86AA500776B81 /* FirebaseDatabaseSwift */; };
+		FA3EEF2328D86AA500776B81 /* FirebaseDynamicLinks in Frameworks */ = {isa = PBXBuildFile; productRef = FA3EEF2228D86AA500776B81 /* FirebaseDynamicLinks */; };
+		FA3EEF2528D86AA500776B81 /* FirebaseInAppMessaging-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = FA3EEF2428D86AA500776B81 /* FirebaseInAppMessaging-Beta */; };
+		FA3EEF2728D86AA600776B81 /* FirebaseInAppMessagingSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = FA3EEF2628D86AA600776B81 /* FirebaseInAppMessagingSwift-Beta */; };
+		FA3EEF2928D86AA600776B81 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = FA3EEF2828D86AA600776B81 /* FirebaseMessaging */; };
+		FA3EEF2B28D86AA600776B81 /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = FA3EEF2A28D86AA600776B81 /* FirebaseRemoteConfig */; };
+		FA3EEF2D28D86AA600776B81 /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FA3EEF2C28D86AA600776B81 /* FirebaseRemoteConfigSwift */; };
+		FA3EEF2F28D86AA600776B81 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = FA3EEF2E28D86AA600776B81 /* FirebaseStorage */; };
+		FA46A6232977FC77008CE5EE /* ImageModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA46A6222977FC77008CE5EE /* ImageModifier.swift */; };
+		FA46A627297817DD008CE5EE /* AssetsTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA46A626297817DD008CE5EE /* AssetsTabView.swift */; };
+		FA49D14828E242F80069250A /* SentPhotosProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA49D14728E242F80069250A /* SentPhotosProperties.swift */; };
+		FA4B0315290BB2C700793BE8 /* GoogleDropBoxService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4B0314290BB2C700793BE8 /* GoogleDropBoxService.swift */; };
+		FA4E50832982CDBA00BE876E /* AddMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4E50822982CDBA00BE876E /* AddMessageView.swift */; };
+		FA4E50852982E24500BE876E /* MessageRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4E50842982E24500BE876E /* MessageRowView.swift */; };
+		FA4E8D21297070E9007E0D95 /* RemoteFolderEditObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4E8D20297070E9007E0D95 /* RemoteFolderEditObject.swift */; };
+		FA5E373C28FD378700EA7766 /* AddPhotoLibraryAssetsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5E373B28FD378700EA7766 /* AddPhotoLibraryAssetsView.swift */; };
+		FA5E373E28FD571E00EA7766 /* ChooseLibrariesPhotosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5E373D28FD571E00EA7766 /* ChooseLibrariesPhotosView.swift */; };
+		FA639BA628A5028C0011EAE3 /* SwiftyDropbox in Frameworks */ = {isa = PBXBuildFile; productRef = FA639BA528A5028C0011EAE3 /* SwiftyDropbox */; };
+		FA66C02428A42CA500E338A1 /* MSAL in Frameworks */ = {isa = PBXBuildFile; productRef = FA66C02328A42CA500E338A1 /* MSAL */; };
+		FA6852FD2988F7FE00FF9FB0 /* AddCommentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6852FC2988F7FE00FF9FB0 /* AddCommentView.swift */; };
+		FA68B52C290280CB0066C9E6 /* AuthenticationDropBoxModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA68B52B290280CB0066C9E6 /* AuthenticationDropBoxModel.swift */; };
+		FA68B52E2902A7D00066C9E6 /* DropBoxFolderSynchProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA68B52D2902A7D00066C9E6 /* DropBoxFolderSynchProgressView.swift */; };
+		FA6A542F297FF631000E67F8 /* ChangePictureNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6A542E297FF631000E67F8 /* ChangePictureNameView.swift */; };
+		FA6EA2C128CA12C20004DCFA /* CoreDataSyncAssetDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6EA2C028CA12C20004DCFA /* CoreDataSyncAssetDatabase.swift */; };
+		FA70789228DC576C00EED758 /* PhotoCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA70789128DC576C00EED758 /* PhotoCreator.swift */; };
+		FA70789428DCA92300EED758 /* PhotoListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA70789328DCA92300EED758 /* PhotoListPresenter.swift */; };
+		FA72160528EEF1A700FAA7B3 /* ListGoogleDriveFoldersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA72160428EEF1A700FAA7B3 /* ListGoogleDriveFoldersView.swift */; };
+		FA72160728EF0B4500FAA7B3 /* ChoseFolderRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA72160628EF0B4500FAA7B3 /* ChoseFolderRowView.swift */; };
+		FA734E3E2861DF8F00A31DCB /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA734E3D2861DF8F00A31DCB /* CameraView.swift */; };
+		FA734E412861E04E00A31DCB /* CameraViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA734E402861E04E00A31DCB /* CameraViewModel.swift */; };
+		FA734E432861E0B600A31DCB /* CameraError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA734E422861E0B600A31DCB /* CameraError.swift */; };
+		FA734E452861E11B00A31DCB /* CameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA734E442861E11B00A31DCB /* CameraManager.swift */; };
+		FA734E472861E23600A31DCB /* FrameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA734E462861E23600A31DCB /* FrameManager.swift */; };
+		FA734E492861E4F800A31DCB /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA734E482861E4F800A31DCB /* ErrorView.swift */; };
+		FA734E4B2861E56A00A31DCB /* FrameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA734E4A2861E56A00A31DCB /* FrameView.swift */; };
+		FA735C4A29228DAE000C2F07 /* PhotosOneDriveSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA735C4929228DAE000C2F07 /* PhotosOneDriveSender.swift */; };
+		FA737E6728DE09ED0067B863 /* PhotoIdentity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA737E6128DE09ED0067B863 /* PhotoIdentity+CoreDataClass.swift */; };
+		FA737E6828DE09ED0067B863 /* PhotoIdentity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA737E6228DE09ED0067B863 /* PhotoIdentity+CoreDataProperties.swift */; };
+		FA737E6928DE09ED0067B863 /* AlbumIdentity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA737E6328DE09ED0067B863 /* AlbumIdentity+CoreDataClass.swift */; };
+		FA737E6B28DE09ED0067B863 /* SendPhotoIdentity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA737E6528DE09ED0067B863 /* SendPhotoIdentity+CoreDataClass.swift */; };
+		FA737E6C28DE09ED0067B863 /* SendPhotoIdentity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA737E6628DE09ED0067B863 /* SendPhotoIdentity+CoreDataProperties.swift */; };
+		FA78B89E28CB6C2B00D1ADCA /* SyncAssetDatabaseAccessObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA78B89D28CB6C2B00D1ADCA /* SyncAssetDatabaseAccessObject.swift */; };
+		FA78DB4F28607F1A00951552 /* PhotoRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA78DB4E28607F1A00951552 /* PhotoRow.swift */; };
+		FA796A9B28A68A23000BBEF0 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = FA796A9A28A68A23000BBEF0 /* GoogleSignIn */; };
+		FA796A9D28A68A23000BBEF0 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FA796A9C28A68A23000BBEF0 /* GoogleSignInSwift */; };
+		FA796AA028A68C6D000BBEF0 /* GoogleAPIClientForREST_Drive in Frameworks */ = {isa = PBXBuildFile; productRef = FA796A9F28A68C6D000BBEF0 /* GoogleAPIClientForREST_Drive */; };
+		FA796AA228A68C6D000BBEF0 /* GoogleAPIClientForREST_DriveActivity in Frameworks */ = {isa = PBXBuildFile; productRef = FA796AA128A68C6D000BBEF0 /* GoogleAPIClientForREST_DriveActivity */; };
+		FA7E408329031D7B00E49EBA /* SignInDropboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7E408229031D7B00E49EBA /* SignInDropboxView.swift */; };
+		FA7FEF052873414A0053013A /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7FEF042873414A0053013A /* FileManager.swift */; };
+		FA80AB3C2954D48000721FD2 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA80AB3B2954D48000721FD2 /* Utils.swift */; };
+		FA843B7C2871965E00BC0CEA /* PhotoError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA843B7B2871965E00BC0CEA /* PhotoError.swift */; };
+		FA843B7E2871B5D400BC0CEA /* PhotosProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA843B7D2871B5D400BC0CEA /* PhotosProperties.swift */; };
+		FA9751B4291CE5EE005C0C01 /* OneDriveFolderSynchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9751B3291CE5EE005C0C01 /* OneDriveFolderSynchView.swift */; };
+		FA9751B6291CE758005C0C01 /* AuthenticationOneDriveModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9751B5291CE758005C0C01 /* AuthenticationOneDriveModel.swift */; };
+		FA9751B8291D286C005C0C01 /* SignInOneDriveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9751B7291D286C005C0C01 /* SignInOneDriveView.swift */; };
+		FA9751BA291D2956005C0C01 /* OneDriveFolderSynchProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9751B9291D2956005C0C01 /* OneDriveFolderSynchProgressView.swift */; };
+		FA9751BC291D439B005C0C01 /* MicroSoftOneDriveService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9751BB291D439B005C0C01 /* MicroSoftOneDriveService.swift */; };
+		FA98FF8228CDE26200694A04 /* GoogleFolderSynchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA98FF8128CDE26200694A04 /* GoogleFolderSynchView.swift */; };
+		FA98FF8428CDE42200694A04 /* GoogleFolderSynchProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA98FF8328CDE42200694A04 /* GoogleFolderSynchProgressView.swift */; };
+		FAA0000428E2F1CF002A1081 /* SyncPhotosProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA0000328E2F1CF002A1081 /* SyncPhotosProperties.swift */; };
+		FAA0000828E3061C002A1081 /* PhotosGoogleDriveSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA0000728E3061C002A1081 /* PhotosGoogleDriveSender.swift */; };
+		FAA27FAC285FD112009ECE6A /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA27FAB285FD112009ECE6A /* CircleImage.swift */; };
+		FAA27FAE285FD271009ECE6A /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA27FAD285FD271009ECE6A /* MapView.swift */; };
+		FAA2EE64290DBAA3008FFC83 /* PhotosGoogleDropBoxSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA2EE63290DBAA3008FFC83 /* PhotosGoogleDropBoxSender.swift */; };
+		FAA410E328ACCB0F003E265E /* PhotoLibraryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA410E228ACCB0F003E265E /* PhotoLibraryController.swift */; };
+		FAA410E528ACFA5A003E265E /* RootLibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA410E428ACFA5A003E265E /* RootLibraryView.swift */; };
+		FAAABA0E28C922D000E99650 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA843B812872381800BC0CEA /* CloudKit.framework */; };
+		FAAABA1328C9352A00E99650 /* SyncAssetIdentityDatabase.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FAAABA1128C9352A00E99650 /* SyncAssetIdentityDatabase.xcdatamodeld */; };
+		FAAB4D9328E44E9700B67E5D /* Synchronizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAB4D9228E44E9700B67E5D /* Synchronizer.swift */; };
+		FAAB4D9528E457C700B67E5D /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAB4D9428E457C700B67E5D /* NetworkMonitor.swift */; };
+		FAAB4D9728E4864A00B67E5D /* UserDefaultUploadingSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAB4D9628E4864A00B67E5D /* UserDefaultUploadingSettings.swift */; };
+		FAAB4D9928E4934B00B67E5D /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAB4D9828E4934B00B67E5D /* SettingsView.swift */; };
+		FAAE56872909201E00693DF0 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAE56862909201E00693DF0 /* ImagePicker.swift */; };
+		FABA3B9528AFD41F0008B823 /* RootLibraryRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABA3B9428AFD41F0008B823 /* RootLibraryRowView.swift */; };
+		FABDAB9C2901ADE300FD3EF9 /* DropBoxFolderSynchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABDAB9B2901ADE300FD3EF9 /* DropBoxFolderSynchView.swift */; };
+		FAC1128328FDF2B300312839 /* camera_shutter_click.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FAC1128228FDF2B300312839 /* camera_shutter_click.mp3 */; };
+		FAC1128528FDF95900312839 /* CameraSoundModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC1128428FDF95900312839 /* CameraSoundModel.swift */; };
+		FAC11E372913FC0A00090C5A /* SelectButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC11E362913FC0A00090C5A /* SelectButton.swift */; };
+		FAC11E392914077300090C5A /* EditButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC11E382914077300090C5A /* EditButton.swift */; };
+		FACF2648285F05E900B72AA1 /* RoutesPhotoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACF2647285F05E900B72AA1 /* RoutesPhotoApp.swift */; };
+		FACF264C285F05ED00B72AA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FACF264B285F05ED00B72AA1 /* Assets.xcassets */; };
+		FACF264F285F05ED00B72AA1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FACF264E285F05ED00B72AA1 /* Preview Assets.xcassets */; };
+		FACF2651285F05ED00B72AA1 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACF2650285F05ED00B72AA1 /* Persistence.swift */; };
+		FACF2654285F05ED00B72AA1 /* RoutesPhoto.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FACF2652285F05ED00B72AA1 /* RoutesPhoto.xcdatamodeld */; };
+		FACF265E285F05ED00B72AA1 /* RoutesPhotoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACF265D285F05ED00B72AA1 /* RoutesPhotoTests.swift */; };
+		FACF2668285F05ED00B72AA1 /* RoutesPhotoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACF2667285F05ED00B72AA1 /* RoutesPhotoUITests.swift */; };
+		FACF266A285F05ED00B72AA1 /* RoutesPhotoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACF2669285F05ED00B72AA1 /* RoutesPhotoUITestsLaunchTests.swift */; };
+		FAD4F20329814351003F097B /* SendMessageIdentity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD4F1FF29814351003F097B /* SendMessageIdentity+CoreDataClass.swift */; };
+		FAD4F20429814351003F097B /* SendMessageIdentity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD4F20029814351003F097B /* SendMessageIdentity+CoreDataProperties.swift */; };
+		FAD4F20529814351003F097B /* MessageIdentity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD4F20129814351003F097B /* MessageIdentity+CoreDataClass.swift */; };
+		FAD4F208298149F6003F097B /* MessageProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD4F207298149F6003F097B /* MessageProperties.swift */; };
+		FAD4F20C29815BD9003F097B /* AlbumIdentity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD4F20B29815BD9003F097B /* AlbumIdentity+CoreDataProperties.swift */; };
+		FAD4F20E29817E61003F097B /* MessageIdentity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD4F20D29817E61003F097B /* MessageIdentity+CoreDataProperties.swift */; };
+		FAD4F21029818FED003F097B /* SentMessageProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD4F20F29818FED003F097B /* SentMessageProperties.swift */; };
+		FADCCB3128B35A1F001A6285 /* AuthenticationGoogleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADCCB3028B35A1F001A6285 /* AuthenticationGoogleViewModel.swift */; };
+		FADCCB3328B35B46001A6285 /* SignInGoogleAuthenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADCCB3228B35B46001A6285 /* SignInGoogleAuthenticator.swift */; };
+		FADCCB3528B35D27001A6285 /* SignInGoogleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADCCB3428B35D27001A6285 /* SignInGoogleView.swift */; };
+		FADCCB3728B37156001A6285 /* AssetDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADCCB3628B37156001A6285 /* AssetDetailView.swift */; };
+		FADCCB3928B37DE6001A6285 /* UploadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADCCB3828B37DE6001A6285 /* UploadingView.swift */; };
+		FADCCB3B28B39EB8001A6285 /* GoogleOneDriveService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADCCB3A28B39EB8001A6285 /* GoogleOneDriveService.swift */; };
+		FADCCB3D28B3B334001A6285 /* UploadingProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADCCB3C28B3B334001A6285 /* UploadingProgressView.swift */; };
+		FADF412D28AA250D00DC2CEB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADF412C28AA250D00DC2CEB /* ContentView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FACF265A285F05ED00B72AA1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FACF263C285F05E900B72AA1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FACF2643285F05E900B72AA1;
+			remoteInfo = RoutesPhoto;
+		};
+		FACF2664285F05ED00B72AA1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FACF263C285F05E900B72AA1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FACF2643285F05E900B72AA1;
+			remoteInfo = RoutesPhoto;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FA08961228D9A99300A35551 /* FileError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileError.swift; sourceTree = "<group>"; };
+		FA30614C296B1D4800624A7E /* NavigationStateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationStateManager.swift; sourceTree = "<group>"; };
+		FA326AE228EB0B5900F2A67F /* ButtonFolderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonFolderView.swift; sourceTree = "<group>"; };
+		FA34AD79290FA698001EE095 /* PermissionsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionsModel.swift; sourceTree = "<group>"; };
+		FA3DAD1928B26458008BF9BC /* AssetsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetsList.swift; sourceTree = "<group>"; };
+		FA3DAD1B28B26C8B008BF9BC /* AssetRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetRow.swift; sourceTree = "<group>"; };
+		FA3E23D428ED93D000FF4490 /* CreateFolderModalWithPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateFolderModalWithPickerView.swift; sourceTree = "<group>"; };
+		FA3EEF1528D8685C00776B81 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FA46A6222977FC77008CE5EE /* ImageModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageModifier.swift; sourceTree = "<group>"; };
+		FA46A626297817DD008CE5EE /* AssetsTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetsTabView.swift; sourceTree = "<group>"; };
+		FA49D14728E242F80069250A /* SentPhotosProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentPhotosProperties.swift; sourceTree = "<group>"; };
+		FA4B0314290BB2C700793BE8 /* GoogleDropBoxService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleDropBoxService.swift; sourceTree = "<group>"; };
+		FA4E50822982CDBA00BE876E /* AddMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMessageView.swift; sourceTree = "<group>"; };
+		FA4E50842982E24500BE876E /* MessageRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageRowView.swift; sourceTree = "<group>"; };
+		FA4E8D20297070E9007E0D95 /* RemoteFolderEditObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFolderEditObject.swift; sourceTree = "<group>"; };
+		FA5E373B28FD378700EA7766 /* AddPhotoLibraryAssetsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPhotoLibraryAssetsView.swift; sourceTree = "<group>"; };
+		FA5E373D28FD571E00EA7766 /* ChooseLibrariesPhotosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseLibrariesPhotosView.swift; sourceTree = "<group>"; };
+		FA66C02528A444CC00E338A1 /* RoutesPhotoDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RoutesPhotoDebug.entitlements; sourceTree = "<group>"; };
+		FA6852FC2988F7FE00FF9FB0 /* AddCommentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCommentView.swift; sourceTree = "<group>"; };
+		FA68B52B290280CB0066C9E6 /* AuthenticationDropBoxModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationDropBoxModel.swift; sourceTree = "<group>"; };
+		FA68B52D2902A7D00066C9E6 /* DropBoxFolderSynchProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropBoxFolderSynchProgressView.swift; sourceTree = "<group>"; };
+		FA6A542E297FF631000E67F8 /* ChangePictureNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePictureNameView.swift; sourceTree = "<group>"; };
+		FA6EA2C028CA12C20004DCFA /* CoreDataSyncAssetDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataSyncAssetDatabase.swift; sourceTree = "<group>"; };
+		FA70789128DC576C00EED758 /* PhotoCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCreator.swift; sourceTree = "<group>"; };
+		FA70789328DCA92300EED758 /* PhotoListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoListPresenter.swift; sourceTree = "<group>"; };
+		FA72160428EEF1A700FAA7B3 /* ListGoogleDriveFoldersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListGoogleDriveFoldersView.swift; sourceTree = "<group>"; };
+		FA72160628EF0B4500FAA7B3 /* ChoseFolderRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoseFolderRowView.swift; sourceTree = "<group>"; };
+		FA734E3D2861DF8F00A31DCB /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		FA734E402861E04E00A31DCB /* CameraViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewModel.swift; sourceTree = "<group>"; };
+		FA734E422861E0B600A31DCB /* CameraError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraError.swift; sourceTree = "<group>"; };
+		FA734E442861E11B00A31DCB /* CameraManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraManager.swift; sourceTree = "<group>"; };
+		FA734E462861E23600A31DCB /* FrameManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameManager.swift; sourceTree = "<group>"; };
+		FA734E482861E4F800A31DCB /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		FA734E4A2861E56A00A31DCB /* FrameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameView.swift; sourceTree = "<group>"; };
+		FA735C4929228DAE000C2F07 /* PhotosOneDriveSender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosOneDriveSender.swift; sourceTree = "<group>"; };
+		FA737E6128DE09ED0067B863 /* PhotoIdentity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PhotoIdentity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		FA737E6228DE09ED0067B863 /* PhotoIdentity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PhotoIdentity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		FA737E6328DE09ED0067B863 /* AlbumIdentity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlbumIdentity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		FA737E6528DE09ED0067B863 /* SendPhotoIdentity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SendPhotoIdentity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		FA737E6628DE09ED0067B863 /* SendPhotoIdentity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SendPhotoIdentity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		FA78B89D28CB6C2B00D1ADCA /* SyncAssetDatabaseAccessObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncAssetDatabaseAccessObject.swift; sourceTree = "<group>"; };
+		FA78DB4E28607F1A00951552 /* PhotoRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoRow.swift; sourceTree = "<group>"; };
+		FA7E408229031D7B00E49EBA /* SignInDropboxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInDropboxView.swift; sourceTree = "<group>"; };
+		FA7FEF042873414A0053013A /* FileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
+		FA80AB3B2954D48000721FD2 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		FA843B7B2871965E00BC0CEA /* PhotoError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoError.swift; sourceTree = "<group>"; };
+		FA843B7D2871B5D400BC0CEA /* PhotosProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosProperties.swift; sourceTree = "<group>"; };
+		FA843B7F2872381200BC0CEA /* RoutesPhoto.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RoutesPhoto.entitlements; sourceTree = "<group>"; };
+		FA843B812872381800BC0CEA /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		FA9751B3291CE5EE005C0C01 /* OneDriveFolderSynchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneDriveFolderSynchView.swift; sourceTree = "<group>"; };
+		FA9751B5291CE758005C0C01 /* AuthenticationOneDriveModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationOneDriveModel.swift; sourceTree = "<group>"; };
+		FA9751B7291D286C005C0C01 /* SignInOneDriveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInOneDriveView.swift; sourceTree = "<group>"; };
+		FA9751B9291D2956005C0C01 /* OneDriveFolderSynchProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneDriveFolderSynchProgressView.swift; sourceTree = "<group>"; };
+		FA9751BB291D439B005C0C01 /* MicroSoftOneDriveService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicroSoftOneDriveService.swift; sourceTree = "<group>"; };
+		FA98FF8128CDE26200694A04 /* GoogleFolderSynchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleFolderSynchView.swift; sourceTree = "<group>"; };
+		FA98FF8328CDE42200694A04 /* GoogleFolderSynchProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleFolderSynchProgressView.swift; sourceTree = "<group>"; };
+		FAA0000328E2F1CF002A1081 /* SyncPhotosProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncPhotosProperties.swift; sourceTree = "<group>"; };
+		FAA0000728E3061C002A1081 /* PhotosGoogleDriveSender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosGoogleDriveSender.swift; sourceTree = "<group>"; };
+		FAA27FAB285FD112009ECE6A /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		FAA27FAD285FD271009ECE6A /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		FAA2EE63290DBAA3008FFC83 /* PhotosGoogleDropBoxSender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosGoogleDropBoxSender.swift; sourceTree = "<group>"; };
+		FAA410E228ACCB0F003E265E /* PhotoLibraryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLibraryController.swift; sourceTree = "<group>"; };
+		FAA410E428ACFA5A003E265E /* RootLibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootLibraryView.swift; sourceTree = "<group>"; };
+		FAAABA1228C9352A00E99650 /* SyncAssetIdentityDatabase.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SyncAssetIdentityDatabase.xcdatamodel; sourceTree = "<group>"; };
+		FAAB4D9228E44E9700B67E5D /* Synchronizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Synchronizer.swift; sourceTree = "<group>"; };
+		FAAB4D9428E457C700B67E5D /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
+		FAAB4D9628E4864A00B67E5D /* UserDefaultUploadingSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultUploadingSettings.swift; sourceTree = "<group>"; };
+		FAAB4D9828E4934B00B67E5D /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		FAAE56862909201E00693DF0 /* ImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		FABA3B9428AFD41F0008B823 /* RootLibraryRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootLibraryRowView.swift; sourceTree = "<group>"; };
+		FABDAB9B2901ADE300FD3EF9 /* DropBoxFolderSynchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropBoxFolderSynchView.swift; sourceTree = "<group>"; };
+		FAC1128228FDF2B300312839 /* camera_shutter_click.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = camera_shutter_click.mp3; sourceTree = "<group>"; };
+		FAC1128428FDF95900312839 /* CameraSoundModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraSoundModel.swift; sourceTree = "<group>"; };
+		FAC11E362913FC0A00090C5A /* SelectButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectButton.swift; sourceTree = "<group>"; };
+		FAC11E382914077300090C5A /* EditButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditButton.swift; sourceTree = "<group>"; };
+		FAC888532863A9870039366A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		FACF2644285F05E900B72AA1 /* RoutesPhoto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoutesPhoto.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FACF2647285F05E900B72AA1 /* RoutesPhotoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutesPhotoApp.swift; sourceTree = "<group>"; };
+		FACF264B285F05ED00B72AA1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FACF264E285F05ED00B72AA1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FACF2650285F05ED00B72AA1 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		FACF2653285F05ED00B72AA1 /* RoutesPhoto.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RoutesPhoto.xcdatamodel; sourceTree = "<group>"; };
+		FACF2659285F05ED00B72AA1 /* RoutesPhotoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoutesPhotoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FACF265D285F05ED00B72AA1 /* RoutesPhotoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutesPhotoTests.swift; sourceTree = "<group>"; };
+		FACF2663285F05ED00B72AA1 /* RoutesPhotoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoutesPhotoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FACF2667285F05ED00B72AA1 /* RoutesPhotoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutesPhotoUITests.swift; sourceTree = "<group>"; };
+		FACF2669285F05ED00B72AA1 /* RoutesPhotoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutesPhotoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FAD4F1FF29814351003F097B /* SendMessageIdentity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SendMessageIdentity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		FAD4F20029814351003F097B /* SendMessageIdentity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SendMessageIdentity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		FAD4F20129814351003F097B /* MessageIdentity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MessageIdentity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		FAD4F207298149F6003F097B /* MessageProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageProperties.swift; sourceTree = "<group>"; };
+		FAD4F20B29815BD9003F097B /* AlbumIdentity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlbumIdentity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		FAD4F20D29817E61003F097B /* MessageIdentity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MessageIdentity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		FAD4F20F29818FED003F097B /* SentMessageProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentMessageProperties.swift; sourceTree = "<group>"; };
+		FADCCB3028B35A1F001A6285 /* AuthenticationGoogleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationGoogleViewModel.swift; sourceTree = "<group>"; };
+		FADCCB3228B35B46001A6285 /* SignInGoogleAuthenticator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInGoogleAuthenticator.swift; sourceTree = "<group>"; };
+		FADCCB3428B35D27001A6285 /* SignInGoogleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInGoogleView.swift; sourceTree = "<group>"; };
+		FADCCB3628B37156001A6285 /* AssetDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetDetailView.swift; sourceTree = "<group>"; };
+		FADCCB3828B37DE6001A6285 /* UploadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadingView.swift; sourceTree = "<group>"; };
+		FADCCB3A28B39EB8001A6285 /* GoogleOneDriveService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleOneDriveService.swift; sourceTree = "<group>"; };
+		FADCCB3C28B3B334001A6285 /* UploadingProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadingProgressView.swift; sourceTree = "<group>"; };
+		FADF412C28AA250D00DC2CEB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FACF2641285F05E900B72AA1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA3EEF2928D86AA600776B81 /* FirebaseMessaging in Frameworks */,
+				FA3EEF2128D86AA500776B81 /* FirebaseDatabaseSwift in Frameworks */,
+				FA3EEF2528D86AA500776B81 /* FirebaseInAppMessaging-Beta in Frameworks */,
+				FA3EEF2D28D86AA600776B81 /* FirebaseRemoteConfigSwift in Frameworks */,
+				FA3EEF1B28D86AA500776B81 /* FirebaseAnalyticsSwift in Frameworks */,
+				FA3EEF2B28D86AA600776B81 /* FirebaseRemoteConfig in Frameworks */,
+				FAAABA0E28C922D000E99650 /* CloudKit.framework in Frameworks */,
+				FA796AA028A68C6D000BBEF0 /* GoogleAPIClientForREST_Drive in Frameworks */,
+				FA3EEF1928D86AA500776B81 /* FirebaseAnalytics in Frameworks */,
+				FA3EEF2F28D86AA600776B81 /* FirebaseStorage in Frameworks */,
+				FA796A9D28A68A23000BBEF0 /* GoogleSignInSwift in Frameworks */,
+				FA3EEF2728D86AA600776B81 /* FirebaseInAppMessagingSwift-Beta in Frameworks */,
+				FA796A9B28A68A23000BBEF0 /* GoogleSignIn in Frameworks */,
+				FA66C02428A42CA500E338A1 /* MSAL in Frameworks */,
+				FA3EEF1D28D86AA500776B81 /* FirebaseCrashlytics in Frameworks */,
+				FA3EEF1F28D86AA500776B81 /* FirebaseDatabase in Frameworks */,
+				FA639BA628A5028C0011EAE3 /* SwiftyDropbox in Frameworks */,
+				FA796AA228A68C6D000BBEF0 /* GoogleAPIClientForREST_DriveActivity in Frameworks */,
+				FA3EEF2328D86AA500776B81 /* FirebaseDynamicLinks in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FACF2656285F05ED00B72AA1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FACF2660285F05ED00B72AA1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FA169444295998DB000C11CD /* DropBoxSyncView */ = {
+			isa = PBXGroup;
+			children = (
+				FABDAB9B2901ADE300FD3EF9 /* DropBoxFolderSynchView.swift */,
+				FA68B52D2902A7D00066C9E6 /* DropBoxFolderSynchProgressView.swift */,
+				FA7E408229031D7B00E49EBA /* SignInDropboxView.swift */,
+			);
+			path = DropBoxSyncView;
+			sourceTree = "<group>";
+		};
+		FA1694492959C0E9000C11CD /* OneDriveSyncView */ = {
+			isa = PBXGroup;
+			children = (
+				FA9751B3291CE5EE005C0C01 /* OneDriveFolderSynchView.swift */,
+				FA9751B7291D286C005C0C01 /* SignInOneDriveView.swift */,
+				FA9751B9291D2956005C0C01 /* OneDriveFolderSynchProgressView.swift */,
+			);
+			path = OneDriveSyncView;
+			sourceTree = "<group>";
+		};
+		FA3EEF1428D8684000776B81 /* SuppotringFiles */ = {
+			isa = PBXGroup;
+			children = (
+				FAC1128228FDF2B300312839 /* camera_shutter_click.mp3 */,
+				FA3EEF1528D8685C00776B81 /* GoogleService-Info.plist */,
+			);
+			path = SuppotringFiles;
+			sourceTree = "<group>";
+		};
+		FA46A6242978161D008CE5EE /* AssetsDetail */ = {
+			isa = PBXGroup;
+			children = (
+				FA5E373B28FD378700EA7766 /* AddPhotoLibraryAssetsView.swift */,
+				FA5E373D28FD571E00EA7766 /* ChooseLibrariesPhotosView.swift */,
+				FA3DAD1928B26458008BF9BC /* AssetsList.swift */,
+				FA3DAD1B28B26C8B008BF9BC /* AssetRow.swift */,
+				FADCCB3628B37156001A6285 /* AssetDetailView.swift */,
+				FAAE56862909201E00693DF0 /* ImagePicker.swift */,
+				FAA27FAB285FD112009ECE6A /* CircleImage.swift */,
+				FA46A626297817DD008CE5EE /* AssetsTabView.swift */,
+				FA6A542E297FF631000E67F8 /* ChangePictureNameView.swift */,
+				FA4E50822982CDBA00BE876E /* AddMessageView.swift */,
+				FA4E50842982E24500BE876E /* MessageRowView.swift */,
+				FA6852FC2988F7FE00FF9FB0 /* AddCommentView.swift */,
+			);
+			path = AssetsDetail;
+			sourceTree = "<group>";
+		};
+		FA46A625297816B7008CE5EE /* ViewControls */ = {
+			isa = PBXGroup;
+			children = (
+				FAA27FAD285FD271009ECE6A /* MapView.swift */,
+				FA78DB4E28607F1A00951552 /* PhotoRow.swift */,
+				FADCCB3828B37DE6001A6285 /* UploadingView.swift */,
+				FADCCB3C28B3B334001A6285 /* UploadingProgressView.swift */,
+				FA326AE228EB0B5900F2A67F /* ButtonFolderView.swift */,
+				FAC11E362913FC0A00090C5A /* SelectButton.swift */,
+				FAC11E382914077300090C5A /* EditButton.swift */,
+			);
+			path = ViewControls;
+			sourceTree = "<group>";
+		};
+		FA6005ED28D281060040B53F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				FA80AB3B2954D48000721FD2 /* Utils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		FA6765D6295C836000BD2D60 /* RootViews */ = {
+			isa = PBXGroup;
+			children = (
+				FA3E23D428ED93D000FF4490 /* CreateFolderModalWithPickerView.swift */,
+				FAAB4D9828E4934B00B67E5D /* SettingsView.swift */,
+				FADF412C28AA250D00DC2CEB /* ContentView.swift */,
+				FAA410E428ACFA5A003E265E /* RootLibraryView.swift */,
+				FABA3B9428AFD41F0008B823 /* RootLibraryRowView.swift */,
+			);
+			path = RootViews;
+			sourceTree = "<group>";
+		};
+		FA6765D7295C84A500BD2D60 /* ListFoldersViews */ = {
+			isa = PBXGroup;
+			children = (
+				FA72160628EF0B4500FAA7B3 /* ChoseFolderRowView.swift */,
+				FA72160428EEF1A700FAA7B3 /* ListGoogleDriveFoldersView.swift */,
+			);
+			path = ListFoldersViews;
+			sourceTree = "<group>";
+		};
+		FA734E3B2861DF4000A31DCB /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				FA734E3F2861E01E00A31DCB /* CameraModel */,
+				FA734E3C2861DF7400A31DCB /* View */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		FA734E3C2861DF7400A31DCB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FA734E3D2861DF8F00A31DCB /* CameraView.swift */,
+				FA734E482861E4F800A31DCB /* ErrorView.swift */,
+				FA734E4A2861E56A00A31DCB /* FrameView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FA734E3F2861E01E00A31DCB /* CameraModel */ = {
+			isa = PBXGroup;
+			children = (
+				FA734E402861E04E00A31DCB /* CameraViewModel.swift */,
+				FA734E422861E0B600A31DCB /* CameraError.swift */,
+				FA734E442861E11B00A31DCB /* CameraManager.swift */,
+				FA734E462861E23600A31DCB /* FrameManager.swift */,
+				FAC1128428FDF95900312839 /* CameraSoundModel.swift */,
+			);
+			path = CameraModel;
+			sourceTree = "<group>";
+		};
+		FA7FEF032873410A0053013A /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				FAD4F1FF29814351003F097B /* SendMessageIdentity+CoreDataClass.swift */,
+				FAD4F20029814351003F097B /* SendMessageIdentity+CoreDataProperties.swift */,
+				FAD4F20129814351003F097B /* MessageIdentity+CoreDataClass.swift */,
+				FAD4F20D29817E61003F097B /* MessageIdentity+CoreDataProperties.swift */,
+				FA737E6128DE09ED0067B863 /* PhotoIdentity+CoreDataClass.swift */,
+				FA737E6228DE09ED0067B863 /* PhotoIdentity+CoreDataProperties.swift */,
+				FAD4F20B29815BD9003F097B /* AlbumIdentity+CoreDataProperties.swift */,
+				FA737E6328DE09ED0067B863 /* AlbumIdentity+CoreDataClass.swift */,
+				FA737E6528DE09ED0067B863 /* SendPhotoIdentity+CoreDataClass.swift */,
+				FA737E6628DE09ED0067B863 /* SendPhotoIdentity+CoreDataProperties.swift */,
+				FACF2652285F05ED00B72AA1 /* RoutesPhoto.xcdatamodeld */,
+				FACF2650285F05ED00B72AA1 /* Persistence.swift */,
+				FA7FEF042873414A0053013A /* FileManager.swift */,
+				FAAABA1128C9352A00E99650 /* SyncAssetIdentityDatabase.xcdatamodeld */,
+				FA6EA2C028CA12C20004DCFA /* CoreDataSyncAssetDatabase.swift */,
+				FA78B89D28CB6C2B00D1ADCA /* SyncAssetDatabaseAccessObject.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		FA843B802872381800BC0CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA843B812872381800BC0CEA /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA84EABC2958D5A0001C3973 /* GoogleSyncView */ = {
+			isa = PBXGroup;
+			children = (
+				FADCCB3428B35D27001A6285 /* SignInGoogleView.swift */,
+				FA98FF8128CDE26200694A04 /* GoogleFolderSynchView.swift */,
+				FA98FF8328CDE42200694A04 /* GoogleFolderSynchProgressView.swift */,
+			);
+			path = GoogleSyncView;
+			sourceTree = "<group>";
+		};
+		FAA27FAA285FD0DB009ECE6A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FA46A625297816B7008CE5EE /* ViewControls */,
+				FA46A6242978161D008CE5EE /* AssetsDetail */,
+				FA6765D7295C84A500BD2D60 /* ListFoldersViews */,
+				FA6765D6295C836000BD2D60 /* RootViews */,
+				FA1694492959C0E9000C11CD /* OneDriveSyncView */,
+				FA169444295998DB000C11CD /* DropBoxSyncView */,
+				FA84EABC2958D5A0001C3973 /* GoogleSyncView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FAA27FAF285FD4A9009ECE6A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FA843B7B2871965E00BC0CEA /* PhotoError.swift */,
+				FA843B7D2871B5D400BC0CEA /* PhotosProperties.swift */,
+				FADCCB3028B35A1F001A6285 /* AuthenticationGoogleViewModel.swift */,
+				FADCCB3228B35B46001A6285 /* SignInGoogleAuthenticator.swift */,
+				FADCCB3A28B39EB8001A6285 /* GoogleOneDriveService.swift */,
+				FA08961228D9A99300A35551 /* FileError.swift */,
+				FA70789128DC576C00EED758 /* PhotoCreator.swift */,
+				FA70789328DCA92300EED758 /* PhotoListPresenter.swift */,
+				FA49D14728E242F80069250A /* SentPhotosProperties.swift */,
+				FAA0000328E2F1CF002A1081 /* SyncPhotosProperties.swift */,
+				FAA0000728E3061C002A1081 /* PhotosGoogleDriveSender.swift */,
+				FAAB4D9228E44E9700B67E5D /* Synchronizer.swift */,
+				FAAB4D9428E457C700B67E5D /* NetworkMonitor.swift */,
+				FAAB4D9628E4864A00B67E5D /* UserDefaultUploadingSettings.swift */,
+				FA68B52B290280CB0066C9E6 /* AuthenticationDropBoxModel.swift */,
+				FA4B0314290BB2C700793BE8 /* GoogleDropBoxService.swift */,
+				FAA2EE63290DBAA3008FFC83 /* PhotosGoogleDropBoxSender.swift */,
+				FA34AD79290FA698001EE095 /* PermissionsModel.swift */,
+				FA9751B5291CE758005C0C01 /* AuthenticationOneDriveModel.swift */,
+				FA9751BB291D439B005C0C01 /* MicroSoftOneDriveService.swift */,
+				FA735C4929228DAE000C2F07 /* PhotosOneDriveSender.swift */,
+				FA30614C296B1D4800624A7E /* NavigationStateManager.swift */,
+				FA4E8D20297070E9007E0D95 /* RemoteFolderEditObject.swift */,
+				FA46A6222977FC77008CE5EE /* ImageModifier.swift */,
+				FAD4F207298149F6003F097B /* MessageProperties.swift */,
+				FAD4F20F29818FED003F097B /* SentMessageProperties.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FAC36D3B28AB88DF00EBA07E /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				FAA410E228ACCB0F003E265E /* PhotoLibraryController.swift */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		FACF263B285F05E900B72AA1 = {
+			isa = PBXGroup;
+			children = (
+				FACF2646285F05E900B72AA1 /* RoutesPhoto */,
+				FACF265C285F05ED00B72AA1 /* RoutesPhotoTests */,
+				FACF2666285F05ED00B72AA1 /* RoutesPhotoUITests */,
+				FACF2645285F05E900B72AA1 /* Products */,
+				FA843B802872381800BC0CEA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FACF2645285F05E900B72AA1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FACF2644285F05E900B72AA1 /* RoutesPhoto.app */,
+				FACF2659285F05ED00B72AA1 /* RoutesPhotoTests.xctest */,
+				FACF2663285F05ED00B72AA1 /* RoutesPhotoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FACF2646285F05E900B72AA1 /* RoutesPhoto */ = {
+			isa = PBXGroup;
+			children = (
+				FA3EEF1428D8684000776B81 /* SuppotringFiles */,
+				FA6005ED28D281060040B53F /* Utils */,
+				FA66C02528A444CC00E338A1 /* RoutesPhotoDebug.entitlements */,
+				FA843B7F2872381200BC0CEA /* RoutesPhoto.entitlements */,
+				FAC888532863A9870039366A /* Info.plist */,
+				FA734E3B2861DF4000A31DCB /* Camera */,
+				FAA27FAF285FD4A9009ECE6A /* Model */,
+				FAA27FAA285FD0DB009ECE6A /* Views */,
+				FAC36D3B28AB88DF00EBA07E /* Library */,
+				FACF2647285F05E900B72AA1 /* RoutesPhotoApp.swift */,
+				FACF264B285F05ED00B72AA1 /* Assets.xcassets */,
+				FA7FEF032873410A0053013A /* Database */,
+				FACF264D285F05ED00B72AA1 /* Preview Content */,
+			);
+			path = RoutesPhoto;
+			sourceTree = "<group>";
+		};
+		FACF264D285F05ED00B72AA1 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FACF264E285F05ED00B72AA1 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FACF265C285F05ED00B72AA1 /* RoutesPhotoTests */ = {
+			isa = PBXGroup;
+			children = (
+				FACF265D285F05ED00B72AA1 /* RoutesPhotoTests.swift */,
+			);
+			path = RoutesPhotoTests;
+			sourceTree = "<group>";
+		};
+		FACF2666285F05ED00B72AA1 /* RoutesPhotoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FACF2667285F05ED00B72AA1 /* RoutesPhotoUITests.swift */,
+				FACF2669285F05ED00B72AA1 /* RoutesPhotoUITestsLaunchTests.swift */,
+			);
+			path = RoutesPhotoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FACF2643285F05E900B72AA1 /* RoutesPhoto */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FACF266D285F05ED00B72AA1 /* Build configuration list for PBXNativeTarget "RoutesPhoto" */;
+			buildPhases = (
+				FACF2640285F05E900B72AA1 /* Sources */,
+				FACF2641285F05E900B72AA1 /* Frameworks */,
+				FACF2642285F05E900B72AA1 /* Resources */,
+				FA3EEF3028D86D1300776B81 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RoutesPhoto;
+			packageProductDependencies = (
+				FA66C02328A42CA500E338A1 /* MSAL */,
+				FA639BA528A5028C0011EAE3 /* SwiftyDropbox */,
+				FA796A9A28A68A23000BBEF0 /* GoogleSignIn */,
+				FA796A9C28A68A23000BBEF0 /* GoogleSignInSwift */,
+				FA796A9F28A68C6D000BBEF0 /* GoogleAPIClientForREST_Drive */,
+				FA796AA128A68C6D000BBEF0 /* GoogleAPIClientForREST_DriveActivity */,
+				FA3EEF1828D86AA500776B81 /* FirebaseAnalytics */,
+				FA3EEF1A28D86AA500776B81 /* FirebaseAnalyticsSwift */,
+				FA3EEF1C28D86AA500776B81 /* FirebaseCrashlytics */,
+				FA3EEF1E28D86AA500776B81 /* FirebaseDatabase */,
+				FA3EEF2028D86AA500776B81 /* FirebaseDatabaseSwift */,
+				FA3EEF2228D86AA500776B81 /* FirebaseDynamicLinks */,
+				FA3EEF2428D86AA500776B81 /* FirebaseInAppMessaging-Beta */,
+				FA3EEF2628D86AA600776B81 /* FirebaseInAppMessagingSwift-Beta */,
+				FA3EEF2828D86AA600776B81 /* FirebaseMessaging */,
+				FA3EEF2A28D86AA600776B81 /* FirebaseRemoteConfig */,
+				FA3EEF2C28D86AA600776B81 /* FirebaseRemoteConfigSwift */,
+				FA3EEF2E28D86AA600776B81 /* FirebaseStorage */,
+			);
+			productName = RoutesPhoto;
+			productReference = FACF2644285F05E900B72AA1 /* RoutesPhoto.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FACF2658285F05ED00B72AA1 /* RoutesPhotoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FACF2670285F05ED00B72AA1 /* Build configuration list for PBXNativeTarget "RoutesPhotoTests" */;
+			buildPhases = (
+				FACF2655285F05ED00B72AA1 /* Sources */,
+				FACF2656285F05ED00B72AA1 /* Frameworks */,
+				FACF2657285F05ED00B72AA1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FACF265B285F05ED00B72AA1 /* PBXTargetDependency */,
+			);
+			name = RoutesPhotoTests;
+			productName = RoutesPhotoTests;
+			productReference = FACF2659285F05ED00B72AA1 /* RoutesPhotoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FACF2662285F05ED00B72AA1 /* RoutesPhotoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FACF2673285F05ED00B72AA1 /* Build configuration list for PBXNativeTarget "RoutesPhotoUITests" */;
+			buildPhases = (
+				FACF265F285F05ED00B72AA1 /* Sources */,
+				FACF2660285F05ED00B72AA1 /* Frameworks */,
+				FACF2661285F05ED00B72AA1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FACF2665285F05ED00B72AA1 /* PBXTargetDependency */,
+			);
+			name = RoutesPhotoUITests;
+			productName = RoutesPhotoUITests;
+			productReference = FACF2663285F05ED00B72AA1 /* RoutesPhotoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FACF263C285F05E900B72AA1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					FACF2643285F05E900B72AA1 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					FACF2658285F05ED00B72AA1 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = FACF2643285F05E900B72AA1;
+					};
+					FACF2662285F05ED00B72AA1 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = FACF2643285F05E900B72AA1;
+					};
+				};
+			};
+			buildConfigurationList = FACF263F285F05E900B72AA1 /* Build configuration list for PBXProject "RoutesPhoto" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FACF263B285F05E900B72AA1;
+			packageReferences = (
+				FA66C02228A42CA500E338A1 /* XCRemoteSwiftPackageReference "microsoft-authentication-library-for-objc" */,
+				FA639BA428A5028C0011EAE3 /* XCRemoteSwiftPackageReference "SwiftyDropbox" */,
+				FA796A9928A68A23000BBEF0 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+				FA796A9E28A68C6D000BBEF0 /* XCRemoteSwiftPackageReference "google-api-objectivec-client-for-rest" */,
+				FA3EEF1728D86AA500776B81 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = FACF2645285F05E900B72AA1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FACF2643285F05E900B72AA1 /* RoutesPhoto */,
+				FACF2658285F05ED00B72AA1 /* RoutesPhotoTests */,
+				FACF2662285F05ED00B72AA1 /* RoutesPhotoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FACF2642285F05E900B72AA1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FACF264F285F05ED00B72AA1 /* Preview Assets.xcassets in Resources */,
+				FACF264C285F05ED00B72AA1 /* Assets.xcassets in Resources */,
+				FAC1128328FDF2B300312839 /* camera_shutter_click.mp3 in Resources */,
+				FA3EEF1628D8685C00776B81 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FACF2657285F05ED00B72AA1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FACF2661285F05ED00B72AA1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		FA3EEF3028D86D1300776B81 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${TARGET_NAME}",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${BUILD_DIR%/Build/*}/SourcePackages/checkouts/firebase-ios-sdk/Crashlytics/run\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FACF2640285F05E900B72AA1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA3E23D528ED93D000FF4490 /* CreateFolderModalWithPickerView.swift in Sources */,
+				FAA410E528ACFA5A003E265E /* RootLibraryView.swift in Sources */,
+				FA98FF8428CDE42200694A04 /* GoogleFolderSynchProgressView.swift in Sources */,
+				FADCCB3928B37DE6001A6285 /* UploadingView.swift in Sources */,
+				FADF412D28AA250D00DC2CEB /* ContentView.swift in Sources */,
+				FACF2654285F05ED00B72AA1 /* RoutesPhoto.xcdatamodeld in Sources */,
+				FAA0000428E2F1CF002A1081 /* SyncPhotosProperties.swift in Sources */,
+				FAAB4D9528E457C700B67E5D /* NetworkMonitor.swift in Sources */,
+				FABDAB9C2901ADE300FD3EF9 /* DropBoxFolderSynchView.swift in Sources */,
+				FA326AE328EB0B5900F2A67F /* ButtonFolderView.swift in Sources */,
+				FA6EA2C128CA12C20004DCFA /* CoreDataSyncAssetDatabase.swift in Sources */,
+				FA7E408329031D7B00E49EBA /* SignInDropboxView.swift in Sources */,
+				FAD4F21029818FED003F097B /* SentMessageProperties.swift in Sources */,
+				FAA410E328ACCB0F003E265E /* PhotoLibraryController.swift in Sources */,
+				FA72160528EEF1A700FAA7B3 /* ListGoogleDriveFoldersView.swift in Sources */,
+				FA737E6928DE09ED0067B863 /* AlbumIdentity+CoreDataClass.swift in Sources */,
+				FAA27FAE285FD271009ECE6A /* MapView.swift in Sources */,
+				FAC11E372913FC0A00090C5A /* SelectButton.swift in Sources */,
+				FACF2651285F05ED00B72AA1 /* Persistence.swift in Sources */,
+				FAAABA1328C9352A00E99650 /* SyncAssetIdentityDatabase.xcdatamodeld in Sources */,
+				FA843B7E2871B5D400BC0CEA /* PhotosProperties.swift in Sources */,
+				FA5E373C28FD378700EA7766 /* AddPhotoLibraryAssetsView.swift in Sources */,
+				FA737E6828DE09ED0067B863 /* PhotoIdentity+CoreDataProperties.swift in Sources */,
+				FA68B52C290280CB0066C9E6 /* AuthenticationDropBoxModel.swift in Sources */,
+				FA737E6B28DE09ED0067B863 /* SendPhotoIdentity+CoreDataClass.swift in Sources */,
+				FA734E412861E04E00A31DCB /* CameraViewModel.swift in Sources */,
+				FA08961328D9A99300A35551 /* FileError.swift in Sources */,
+				FAAB4D9928E4934B00B67E5D /* SettingsView.swift in Sources */,
+				FADCCB3728B37156001A6285 /* AssetDetailView.swift in Sources */,
+				FA735C4A29228DAE000C2F07 /* PhotosOneDriveSender.swift in Sources */,
+				FAD4F20429814351003F097B /* SendMessageIdentity+CoreDataProperties.swift in Sources */,
+				FADCCB3D28B3B334001A6285 /* UploadingProgressView.swift in Sources */,
+				FAD4F20329814351003F097B /* SendMessageIdentity+CoreDataClass.swift in Sources */,
+				FA4E50852982E24500BE876E /* MessageRowView.swift in Sources */,
+				FA734E432861E0B600A31DCB /* CameraError.swift in Sources */,
+				FA98FF8228CDE26200694A04 /* GoogleFolderSynchView.swift in Sources */,
+				FAAB4D9728E4864A00B67E5D /* UserDefaultUploadingSettings.swift in Sources */,
+				FA734E452861E11B00A31DCB /* CameraManager.swift in Sources */,
+				FA737E6728DE09ED0067B863 /* PhotoIdentity+CoreDataClass.swift in Sources */,
+				FAAB4D9328E44E9700B67E5D /* Synchronizer.swift in Sources */,
+				FACF2648285F05E900B72AA1 /* RoutesPhotoApp.swift in Sources */,
+				FAD4F20C29815BD9003F097B /* AlbumIdentity+CoreDataProperties.swift in Sources */,
+				FAD4F208298149F6003F097B /* MessageProperties.swift in Sources */,
+				FAA0000828E3061C002A1081 /* PhotosGoogleDriveSender.swift in Sources */,
+				FA46A6232977FC77008CE5EE /* ImageModifier.swift in Sources */,
+				FA4E8D21297070E9007E0D95 /* RemoteFolderEditObject.swift in Sources */,
+				FA9751BC291D439B005C0C01 /* MicroSoftOneDriveService.swift in Sources */,
+				FA9751B4291CE5EE005C0C01 /* OneDriveFolderSynchView.swift in Sources */,
+				FAC11E392914077300090C5A /* EditButton.swift in Sources */,
+				FA734E472861E23600A31DCB /* FrameManager.swift in Sources */,
+				FA4B0315290BB2C700793BE8 /* GoogleDropBoxService.swift in Sources */,
+				FADCCB3528B35D27001A6285 /* SignInGoogleView.swift in Sources */,
+				FA78B89E28CB6C2B00D1ADCA /* SyncAssetDatabaseAccessObject.swift in Sources */,
+				FA5E373E28FD571E00EA7766 /* ChooseLibrariesPhotosView.swift in Sources */,
+				FADCCB3B28B39EB8001A6285 /* GoogleOneDriveService.swift in Sources */,
+				FA734E3E2861DF8F00A31DCB /* CameraView.swift in Sources */,
+				FAA2EE64290DBAA3008FFC83 /* PhotosGoogleDropBoxSender.swift in Sources */,
+				FA734E4B2861E56A00A31DCB /* FrameView.swift in Sources */,
+				FA68B52E2902A7D00066C9E6 /* DropBoxFolderSynchProgressView.swift in Sources */,
+				FA4E50832982CDBA00BE876E /* AddMessageView.swift in Sources */,
+				FA737E6C28DE09ED0067B863 /* SendPhotoIdentity+CoreDataProperties.swift in Sources */,
+				FA6A542F297FF631000E67F8 /* ChangePictureNameView.swift in Sources */,
+				FA78DB4F28607F1A00951552 /* PhotoRow.swift in Sources */,
+				FA46A627297817DD008CE5EE /* AssetsTabView.swift in Sources */,
+				FA30614D296B1D4800624A7E /* NavigationStateManager.swift in Sources */,
+				FA843B7C2871965E00BC0CEA /* PhotoError.swift in Sources */,
+				FAAE56872909201E00693DF0 /* ImagePicker.swift in Sources */,
+				FAC1128528FDF95900312839 /* CameraSoundModel.swift in Sources */,
+				FAD4F20E29817E61003F097B /* MessageIdentity+CoreDataProperties.swift in Sources */,
+				FA49D14828E242F80069250A /* SentPhotosProperties.swift in Sources */,
+				FA6852FD2988F7FE00FF9FB0 /* AddCommentView.swift in Sources */,
+				FA7FEF052873414A0053013A /* FileManager.swift in Sources */,
+				FA70789428DCA92300EED758 /* PhotoListPresenter.swift in Sources */,
+				FAA27FAC285FD112009ECE6A /* CircleImage.swift in Sources */,
+				FADCCB3128B35A1F001A6285 /* AuthenticationGoogleViewModel.swift in Sources */,
+				FA3DAD1C28B26C8B008BF9BC /* AssetRow.swift in Sources */,
+				FA70789228DC576C00EED758 /* PhotoCreator.swift in Sources */,
+				FADCCB3328B35B46001A6285 /* SignInGoogleAuthenticator.swift in Sources */,
+				FA9751B6291CE758005C0C01 /* AuthenticationOneDriveModel.swift in Sources */,
+				FA9751B8291D286C005C0C01 /* SignInOneDriveView.swift in Sources */,
+				FA72160728EF0B4500FAA7B3 /* ChoseFolderRowView.swift in Sources */,
+				FA734E492861E4F800A31DCB /* ErrorView.swift in Sources */,
+				FA9751BA291D2956005C0C01 /* OneDriveFolderSynchProgressView.swift in Sources */,
+				FA80AB3C2954D48000721FD2 /* Utils.swift in Sources */,
+				FA3DAD1A28B26458008BF9BC /* AssetsList.swift in Sources */,
+				FABA3B9528AFD41F0008B823 /* RootLibraryRowView.swift in Sources */,
+				FA34AD7A290FA698001EE095 /* PermissionsModel.swift in Sources */,
+				FAD4F20529814351003F097B /* MessageIdentity+CoreDataClass.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FACF2655285F05ED00B72AA1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FACF265E285F05ED00B72AA1 /* RoutesPhotoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FACF265F285F05ED00B72AA1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FACF2668285F05ED00B72AA1 /* RoutesPhotoUITests.swift in Sources */,
+				FACF266A285F05ED00B72AA1 /* RoutesPhotoUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FACF265B285F05ED00B72AA1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FACF2643285F05E900B72AA1 /* RoutesPhoto */;
+			targetProxy = FACF265A285F05ED00B72AA1 /* PBXContainerItemProxy */;
+		};
+		FACF2665285F05ED00B72AA1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FACF2643285F05E900B72AA1 /* RoutesPhoto */;
+			targetProxy = FACF2664285F05ED00B72AA1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FACF266B285F05ED00B72AA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FACF266C285F05ED00B72AA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FACF266E285F05ED00B72AA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
+				CODE_SIGN_ENTITLEMENTS = RoutesPhoto/RoutesPhotoDebug.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 5;
+				DEVELOPMENT_ASSET_PATHS = "\"RoutesPhoto/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 66FXUD76DR;
+				ENABLE_PREVIEWS = YES;
+				GCC_C_LANGUAGE_STANDARD = c11;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RoutesPhoto/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera is necessary for scanning barcodes and for obtaining photos";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Location is used to geotag photo and provide mapping functionality";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Need data and location";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Camera is necessary for scanning barcodes and for obtaining photos.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportsDocumentBrowser = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.LineSoftwareRoutesPhoto.RoutesPhoto;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = RoutesPhotosDevelopment;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FACF266F285F05ED00B72AA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
+				CODE_SIGN_ENTITLEMENTS = RoutesPhoto/RoutesPhoto.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 5;
+				DEVELOPMENT_ASSET_PATHS = "\"RoutesPhoto/Preview Content\"";
+				DEVELOPMENT_TEAM = 66FXUD76DR;
+				ENABLE_PREVIEWS = YES;
+				GCC_C_LANGUAGE_STANDARD = c11;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RoutesPhoto/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera is necessary for scanning barcodes and for obtaining photos";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Location is used to geotag photo and provide mapping functionality";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Need data and location";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Camera is necessary for scanning barcodes and for obtaining photos.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportsDocumentBrowser = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.LineSoftwareRoutesPhoto.RoutesPhoto;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = RoutesPhotoDistributionProfile;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FACF2671285F05ED00B72AA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 66FXUD76DR;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.LineSoftwareRoutesPfoto.RoutesPhotoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RoutesPhoto.app/RoutesPhoto";
+			};
+			name = Debug;
+		};
+		FACF2672285F05ED00B72AA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 66FXUD76DR;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.LineSoftwareRoutesPfoto.RoutesPhotoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RoutesPhoto.app/RoutesPhoto";
+			};
+			name = Release;
+		};
+		FACF2674285F05ED00B72AA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 66FXUD76DR;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.LineSoftwareRoutesPfoto.RoutesPhotoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RoutesPhoto;
+			};
+			name = Debug;
+		};
+		FACF2675285F05ED00B72AA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 66FXUD76DR;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.LineSoftwareRoutesPfoto.RoutesPhotoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RoutesPhoto;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FACF263F285F05E900B72AA1 /* Build configuration list for PBXProject "RoutesPhoto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FACF266B285F05ED00B72AA1 /* Debug */,
+				FACF266C285F05ED00B72AA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FACF266D285F05ED00B72AA1 /* Build configuration list for PBXNativeTarget "RoutesPhoto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FACF266E285F05ED00B72AA1 /* Debug */,
+				FACF266F285F05ED00B72AA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FACF2670285F05ED00B72AA1 /* Build configuration list for PBXNativeTarget "RoutesPhotoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FACF2671285F05ED00B72AA1 /* Debug */,
+				FACF2672285F05ED00B72AA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FACF2673285F05ED00B72AA1 /* Build configuration list for PBXNativeTarget "RoutesPhotoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FACF2674285F05ED00B72AA1 /* Debug */,
+				FACF2675285F05ED00B72AA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FA3EEF1728D86AA500776B81 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+		FA639BA428A5028C0011EAE3 /* XCRemoteSwiftPackageReference "SwiftyDropbox" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dropbox/SwiftyDropbox.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		FA66C02228A42CA500E338A1 /* XCRemoteSwiftPackageReference "microsoft-authentication-library-for-objc" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AzureAD/microsoft-authentication-library-for-objc";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		FA796A9928A68A23000BBEF0 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.2.4;
+			};
+		};
+		FA796A9E28A68C6D000BBEF0 /* XCRemoteSwiftPackageReference "google-api-objectivec-client-for-rest" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/google-api-objectivec-client-for-rest";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FA3EEF1828D86AA500776B81 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA3EEF1728D86AA500776B81 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		FA3EEF1A28D86AA500776B81 /* FirebaseAnalyticsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA3EEF1728D86AA500776B81 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsSwift;
+		};
+		FA3EEF1C28D86AA500776B81 /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA3EEF1728D86AA500776B81 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		FA3EEF1E28D86AA500776B81 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA3EEF1728D86AA500776B81 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		FA3EEF2028D86AA500776B81 /* FirebaseDatabaseSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA3EEF1728D86AA500776B81 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabaseSwift;
+		};
+		FA3EEF2228D86AA500776B81 /* FirebaseDynamicLinks */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA3EEF1728D86AA500776B81 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDynamicLinks;
+		};
+		FA3EEF2428D86AA500776B81 /* FirebaseInAppMessaging-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA3EEF1728D86AA500776B81 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseInAppMessaging-Beta";
+		};
+		FA3EEF2628D86AA600776B81 /* FirebaseInAppMessagingSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA3EEF1728D86AA500776B81 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseInAppMessagingSwift-Beta";
+		};
+		FA3EEF2828D86AA600776B81 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA3EEF1728D86AA500776B81 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		FA3EEF2A28D86AA600776B81 /* FirebaseRemoteConfig */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA3EEF1728D86AA500776B81 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseRemoteConfig;
+		};
+		FA3EEF2C28D86AA600776B81 /* FirebaseRemoteConfigSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA3EEF1728D86AA500776B81 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseRemoteConfigSwift;
+		};
+		FA3EEF2E28D86AA600776B81 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA3EEF1728D86AA500776B81 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		FA639BA528A5028C0011EAE3 /* SwiftyDropbox */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA639BA428A5028C0011EAE3 /* XCRemoteSwiftPackageReference "SwiftyDropbox" */;
+			productName = SwiftyDropbox;
+		};
+		FA66C02328A42CA500E338A1 /* MSAL */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA66C02228A42CA500E338A1 /* XCRemoteSwiftPackageReference "microsoft-authentication-library-for-objc" */;
+			productName = MSAL;
+		};
+		FA796A9A28A68A23000BBEF0 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA796A9928A68A23000BBEF0 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		FA796A9C28A68A23000BBEF0 /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA796A9928A68A23000BBEF0 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
+		};
+		FA796A9F28A68C6D000BBEF0 /* GoogleAPIClientForREST_Drive */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA796A9E28A68C6D000BBEF0 /* XCRemoteSwiftPackageReference "google-api-objectivec-client-for-rest" */;
+			productName = GoogleAPIClientForREST_Drive;
+		};
+		FA796AA128A68C6D000BBEF0 /* GoogleAPIClientForREST_DriveActivity */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA796A9E28A68C6D000BBEF0 /* XCRemoteSwiftPackageReference "google-api-objectivec-client-for-rest" */;
+			productName = GoogleAPIClientForREST_DriveActivity;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		FAAABA1128C9352A00E99650 /* SyncAssetIdentityDatabase.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FAAABA1228C9352A00E99650 /* SyncAssetIdentityDatabase.xcdatamodel */,
+			);
+			currentVersion = FAAABA1228C9352A00E99650 /* SyncAssetIdentityDatabase.xcdatamodel */;
+			path = SyncAssetIdentityDatabase.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		FACF2652285F05ED00B72AA1 /* RoutesPhoto.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FACF2653285F05ED00B72AA1 /* RoutesPhoto.xcdatamodel */,
+			);
+			currentVersion = FACF2653285F05ED00B72AA1 /* RoutesPhoto.xcdatamodel */;
+			path = RoutesPhoto.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FACF263C285F05E900B72AA1 /* Project object */;
+}
